@@ -1,8 +1,8 @@
 {
   "DATABASE_URI": "mongodb://localhost:27017/dev",
   "CLOUD_PATH": "./cloud/main.js",
-  "APP_ID": "<your-app-id>",
-  "MASTER_KEY": "<your-master-key>",
+  "APP_ID": "app",
+  "MASTER_KEY": "kuku1688",
   "FILE_KEY": "<your-file-key>",
   "PARSE_MOUNT_PATH": "/parse",
   "SERVER_URL": "<your-server-url>"
