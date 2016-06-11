@@ -25,14 +25,14 @@ nconf.argv().env().file({ file: 'config.json' });
 var app = express();
 
 var parseServer = new ParseServer({
-  databaseURI: nconf.get('DATABASE_URI') || 'mongodb://localhost:27017/dev',
+  databaseURI: nconf.get('DATABASE_URI'), 
   cloud: nconf.get('CLOUD_PATH') || path.join(__dirname, '/cloud/main.js'),
   appId: nconf.get('APP_ID'),
   masterKey: nconf.get('MASTER_KEY'),
   fileKey: nconf.get('FILE_KEY'),
   serverURL: nconf.get('SERVER_URL')
 });
-
+ //|| 'mongodb://localhost:27017/dev',
 // Mount the Parse API server middleware to /parse
 app.use(process.env.PARSE_MOUNT_PATH || '/parse', parseServer);
 
