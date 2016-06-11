@@ -1,5 +1,5 @@
 {
-  "DATABASE_URI": "mongodb://adminkuku:kuku1688@ds051953.mlab.com:51953/testkuku",
+  "DATABASE_URI": "mongodb://adminkuku:kuku1688@ds051953.mlab.com:51953/testkuku';",
   "CLOUD_PATH": "./cloud/main.js",
   "APP_ID": "app",
   "MASTER_KEY": "kuku1688",
