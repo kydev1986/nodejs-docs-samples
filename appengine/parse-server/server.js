@@ -25,7 +25,7 @@ nconf.argv().env().file({ file: 'config.json' });
 var app = express();
 
 var parseServer = new ParseServer({
-  databaseURI: nconf.get('DATABASE_URI')
+  databaseURI: nconf.get('DATABASE_URI'),
   //|| 'mongodb://localhost:27017/dev',
   cloud: nconf.get('CLOUD_PATH') || path.join(__dirname, '/cloud/main.js'),
   appId: nconf.get('APP_ID'),
