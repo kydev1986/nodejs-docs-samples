@@ -37,7 +37,7 @@ var parseServer = new ParseServer({
 app.use(process.env.PARSE_MOUNT_PATH || '/parse', parseServer);
 
 app.get('/', function (req, res) {
-  res.status(200).send('Hello, world!');
+  res.status(200).send('Hello, test!');
 });
 
 var server = app.listen(process.env.PORT || 8080, function () {
